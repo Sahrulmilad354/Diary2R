@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../../img/logo/01.png" width="500" />
+    <title>Diary2R</title>
+  </head>
+  <body>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+      <!-- Bootstrap Icon -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+      <!-- My CSS -->
+      <link rel="stylesheet" href="../../../code/scss/produk.css" />
+
+      <!-- Library AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      <!-- Navbar -->
+      <div class="container my-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav fixed-top shadow">
+          <div class="container">
+            <a class="navbar-brand" href="../../../index.html">
+              <img src="../../../img/logo/02.png" alt="02"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+              <ul class="navbar-nav ms-auto my-2 my-lg-0  navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                <li class="nav-item">
+                  <a class="nav-link nav-produk" href="#"><i class="bi bi-shop"></i> Produk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-tentang" href="../../../code/html/tentang/tentang.html"><i class="bi bi-gear"></i> Tentang</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Akhir Navbar -->
+
+      <!-- Header -->
+      <section class="header">
+        <div class="container">
+          <!-- Carousel -->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../../../img/carousel/01.jpg" class="d-block w-100 custom-carousel" alt="01">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Toko Diary 2R</h5>
+                  <p>Selalu Mengedukasi, Selalu Menginspirasi dan Selalu di Hati.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../../../img/carousel/02.jpg" class="d-block w-100 custom-carousel" alt="02">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Toko Diary 2R</h5>
+                  <p>Selalu Mengedukasi, Selalu Menginspirasi dan Selalu di Hati.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../../../img/carousel/03.jpg" class="d-block w-100 custom-carousel" alt="03">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Toko Diary 2R</h5>
+                  <p>Selalu Mengedukasi, Selalu Menginspirasi dan Selalu di Hati.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Akhir Carousel -->
+
+          <!-- Live Demo -->
+          <a class="btn" data-bs-toggle="offcanvas" href="#produkEdukasi" role="button" aria-controls="produkEdukasi">
+            <i class="bi bi-lightbulb"></i> Produk Edukasi
+          </a>
+          <a class="btn" data-bs-toggle="offcanvas" href="#alatIbadah" role="button" aria-controls="alatIbadah">
+            <i class="bi bi-heart"></i> Alat Ibadah
+          </a>
+          <a class="btn" data-bs-toggle="offcanvas" href="#fashion" role="button" aria-controls="fashion">
+            <i class="bi bi-handbag"></i> Fashion
+          </a>
+          <a class="btn" data-bs-toggle="offcanvas" href="#perabotRumahTangga" role="button" aria-controls="perabotRumahTangga">
+            <i class="bi bi-house-door"></i> Perabot Rumah Tangga
+          </a>
+          <a class="btn" data-bs-toggle="offcanvas" href="#herbal" role="button" aria-controls="herbal">
+            <i class="bi bi-tree"></i> Herbal
+          </a>
+          <a class="btn" data-bs-toggle="offcanvas" href="#kecantikan" role="button" aria-controls="kecantikan">
+            <i class="bi bi-gem"></i> Kecantikan
+          </a>
+
+
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="produkEdukasi" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-lightbulb"></i> Produk Edukasi</h5>
+              <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Diary 2 R menyediakan berbagai produk edukasi anak. Dengan harapan agar anak-anak bisa belajar dengan enjoy, melalui metode-metode yang menarik dan kekinian.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Produk yang Tersedia
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-alquran.html">Al Qur'an</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-cdp.html">CDP</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-chip.html">Chip</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-co-learn-cc.html">Co Learn Cerdas Cermat</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-co-learn-juara.html">CO Learn Juara</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-elp.html">ELP</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-jam-adzan.html">Jam Adzan</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-la-seri.html">LA Seri</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-pen.html">Pen</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-smart-hafiz.html">Smart Hafiz</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-smart-resa.html">Smart Resa</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-smart-cute-cam.html">Smart Cute Cam</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-walter-oid.html">Walter Oid</a></li>
+                  <li><a class="dropdown-item mt-2" href="../produk-edukasi/produk-edukasi-wwp.html">WWP</a></li>
+                  <li><a class="dropdown-item mt-2 mb-3" href="../produk-edukasi/produk-edukasi-paketbundle.html">Paket Bundle</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="alatIbadah" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-heart"></i> Alat Ibadah</h5>
+              <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Diary 2R juga menyediakan peralatan untuk ibadah umat Islam. Dengan harga yang cukup terjangkau dan berkualitas.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Produk yang Tersedia
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item mt-2" href="../alat-ibadah/produk-alat-ibadah-abaya.html">Abaya</a></li>
+                  <li><a class="dropdown-item mt-2 mb-3" href="../alat-ibadah/produk-alat-ibadah-paket-bundle.html">Paket Bundle</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="fashion" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-handbag"></i> Fashion</h5>
+              <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Diary 2R menyediakan berbagai produk fashion, mulai dari kacamata hingga baju-baju. Dengan kualitas terbaik dan harga yang bersahabat.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Produk yang Tersedia
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item mt-2" href="#">Kacamata</a></li>
+                  <li><a class="dropdown-item mt-2 mb-3" href="produk-fashion-paket-bundle.html">Paket Bundle</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="perabotRumahTangga" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-house-door"></i> Perabot Rumah Tangga</h5>
+              <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Diary 2R juga menyediakan prabotan rumah tangga, mulai dari pan, kompor dan lain sebagainya dengan kualitas yang premium.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Produk yang Tersedia
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-blender-mixer.html">Blender & Mixer</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-hair-dryer.html">Hair Dryer</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-handuk.html">Handuk</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-kompor-panggangan-oven.html">Kompor, Pemanggang & Oven</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-lampu.html">Lampu</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-pan.html">Pan</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-panci.html">Panci</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-rice-cooker.html">Rice Cooker</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-sendok-garpu.html">Sendok & Garpu</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-spatula.html">Spatula</a></li>
+                  <li><a class="dropdown-item mt-2" href="../prabot-rumah-tangga/produk-prabot-talenan.html">Talenan</a></li>
+                  <li><a class="dropdown-item mt-2 mb-3" href="../prabot-rumah-tangga/produk-prabot-paket-bundle.html">Paket Bundle</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="herbal" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-tree"></i> Herbal</h5>
+              <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Diary 2R menyediakan berbagai produk herbal, mulai dari essential oil, almond oil hingga diffuser dan air purifier.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Produk yang Tersedia
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item mt-2" href="../herbal/produk-herbal-air-purifier.html">Air Purifier</a></li>
+                  <li><a class="dropdown-item mt-2" href="../herbal/produk-herbal-almond-oil.html">Almond oil</a></li>
+                  <li><a class="dropdown-item mt-2" href="../herbal/produk-herbal-diffuser.html">Diffuser</a></li>
+                  <li><a class="dropdown-item mt-2" href="../herbal/produk-herbal-essential-oil.html">Essential Oil</a></li>
+                  <li><a class="dropdown-item mt-2 mb-3" href="../herbal/produk-herbal-paket-bundle.html">Paket Bundle</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="kecantikan" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-gem"></i> Kecantikan</h5>
+              <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Diary 2R juga menyediakan berbagai produk kecantikan, mulai dari mackup, cream, facial hingga serum dengan kualitas terbaik.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Produk yang Tersedia
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item mt-2" href="../kecantikan/produk-kecantikan-butter.html">Butter</a></li>
+                  <li><a class="dropdown-item mt-2" href="../kecantikan/produk-kecantikan-cream.html">Cream</a></li>
+                  <li><a class="dropdown-item mt-2" href="../kecantikan/produk-kecantikan-facial.html">Facial</a></li>
+                  <li><a class="dropdown-item mt-2" href="../kecantikan/produk-kecantikan-serum.html">Serum</a></li>
+                  <li><a class="dropdown-item mt-2 mb-3" href="../kecantikan/produk-kecantikan-paket-bundle.html">Paket Bundle</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Akhir Live Demo -->
+        </div>
+      </section>
+      
+      
+      <!-- Akhir Header -->
+
+      <!-- Produk  -->
+      <section class="produk">
+        <div class="container">
+          <div class="row text-center mb-3 custom-produk">
+            <div class="col mb-3" data-aos="fade-down" data-aos-duration="1000">
+              <h2>Fashion</h2>
+              <h3>Kacamata</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center custom-produk">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000">
+                <img src="../../../img/produk/fashion/kacamata/01.jpg" class="card-img-top" alt="products 01">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#" data-bs-target="#premium01" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="premium01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="../../../img/modal/premium/fashion/kacamata/01.jpg" alt="01">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>I Glasess Dewasa Tourmaline</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>K-KC1</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Fashion</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 699.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
+                <img src="../../../img/produk/fashion/kacamata/02.jpg" class="card-img-top" alt="products 02">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#premium02" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="premium02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="../../../img/modal/premium/fashion/kacamata/02.jpg" alt="02">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>I Glasess Dewasa Merah Tourmaline</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>J-KC2</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Fashion</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 699.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+                <img src="../../../img/produk/fashion/kacamata/03.jpg" class="card-img-top" alt="products 03">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#premium03" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="premium03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="../../../img/modal/premium/fashion/kacamata/03.jpg" alt="03">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>I Glasess Dewasa Putih Tourmaline</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>J-KC3</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Fashion</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 699.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
+                <img src="../../../img/produk/fashion/kacamata/04.jpg" class="card-img-top" alt="products 04">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#premium04" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="premium04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="../../../img/modal/premium/fashion/kacamata/04.jpg" alt="04">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>I Glasess Dewasa Pink Tourmaline</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>J-KC6</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Fashion</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 699.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
+                <img src="../../../img/produk/fashion/kacamata/05.jpg" class="card-img-top" alt="products 05">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#premium05" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="premium05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="../../../img/modal/premium/fashion/kacamata/05.jpg" alt="05">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>I Glasess Dewasa Biru Tourmaline</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>J-KC5</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Fashion</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 699.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+      
+            </div>
+          </div>
+      </section>
+      <!-- Akhir Produk Terbaik-->
+
+      <!-- Kontak -->
+      <div class="kontak">
+        <div class="row">
+          <div class="col-lg-3 col-3">
+            <h6 class="text-center">Produk Lainnya</h6>
+              <h6><a href="../../../code/html/herbal/produk-herbal-essential-oil.html">Purifyng Set NE</a></h6>
+              <h6><a href="../../../code/html/prabot-rumah-tangga/produk-prabot-blender-mixer.html">Mixer Single</a></h6>
+              <h6><a href="../../../code/html/prabot-rumah-tangga/produk-prabot-pan.html">Red Square Grill</a></h6>
+              <h6><a href="../../../code/html/produk-edukasi/produk-edukasi-pen.html">Pen Abid</a></h6>
+              <h6><a href="../../../code/html/prabot-rumah-tangga/produk-prabot-blender-mixer.html">NPC Single</a></h6>
+          </div>
+          <div class="col-lg-3 col-3">
+            <h6 class="text-center">Logistik Pengiriman</h6>
+              <h6>JNE</h6>
+              <h6>Sicepat</h6>
+              <h6>J&T</h6>
+              <h6>Antar Aja</h6>
+              <h6>Pos Indonesia</h6>
+          </div>
+          <div class="col-lg-3 col-3">
+            <h6 class="text-center">Sosial Media</h6>
+              <h6><a href="https://bit.ly/3IaXdNu">
+                <i class="bi bi-whatsapp"></i> 0812 6794 6739
+              </a></h6>
+              <h6><a href="https://web.facebook.com/Monica.Poetri.N">
+                <i class="bi bi-facebook"></i> Monica Putri N.
+              </a></h6>
+              <h6><a href="https://www.instagram.com/monicapoetri_710/">
+                <i class="bi bi-instagram"></i> monicapoetri_710
+              </a></h6>
+              <h6><a href="https://www.tiktok.com/@monicagen_q710">
+                <i class="bi bi-tiktok"></i> monicageni_q710
+              </a></h6>
+              <h6><i class="bi bi-telegram"></i> 0897 9176 971</h6>
+          </div>
+          <div class="col-lg-3 col-3">  
+            <h6 class="text-center">Lokasi</h6>
+            <a href="https://www.google.co.id/maps/place/Toko+Diary2R+G08/@-6.36178,108.1139191,17z/data=!4m5!3m4!1s0x2e6eb57e1492f85d:0xb501d9af198feced!8m2!3d-6.3617853!4d108.1161131">
+              <h6>
+              Perumahan Surya Residence
+              <br>
+              Ds. Karanganyar Kec. Kandanghaur
+              <br>
+              Kab. Indramayu
+            </h6>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Kontak -->
+
+      <!-- Footer -->
+      <div class="container">
+        <div class="footer">
+          <div class="row">
+            <div class="col text-center">
+              <h6>Copyright 2022 | Diary 2R</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Footer -->
+
+      <!-- Bottom Customer Sevice -->
+      <section>
+        <div class="container">
+          <nav class="navbar navbar-light bg-transparant fixed-bottom ">
+            <div class="container">
+              <a class="navbar-brand ms-auto" href="https://bit.ly/3IaXdNu">
+                <img src="../../../img/cs/01.png" alt="" width="70" height="70">
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- Akhir Bottom Customer Service -->
+
+     
+
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+       <!-- Library AOS -->
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
+
+       <!-- Platfrom GSap-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
+       <!-- GSap-->
+       <script>
+         gsap.registerPlugin(TextPlugin);
+         gsap.to(".display-4", { duration: 5, delay: 1.5, text: "SELAMAT DATANG DI" });
+         gsap.to(".lead", { duration: 5, delay: 1.5, text: "Toko Mamia" });
+         gsap.from(".navbar", { duration: 1.5, y: "-100", opacity: 0, ease: "bounce" });
+         gsap.from(".logo", { duration: 1.5, y: "-100", opacity: 0, ease: "bounce" });
+       </script>
+    </head>
+  </body>
+</html>

@@ -1,0 +1,409 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&family=Ubuntu:wght@400;700&display=swap");
+
+// Variabel
+$primaryColor: rgb(1, 131, 71);
+$secondaryColor: rgb(0, 217, 255);
+$tertiaryColor: rgb(179, 255, 0);
+$textColor: rgb(29, 29, 29);
+
+// Body
+body {
+  padding-top: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+// Mixin 1
+@mixin tombol {
+  display: inline-block;
+  color: $tertiaryColor;
+  background-color: $primaryColor;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+}
+
+// Mixin 2
+@mixin tombol-1 {
+  display: inline-block;
+  color: $tertiaryColor;
+  background-color: $primaryColor;
+  border-radius: 0.5em;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  font-size: 70%;
+  font-family: "Sriracha", cursive;
+}
+
+// Navbar
+.custom-nav {
+  font-family: "Sriracha", cursive;
+  .navbar-brand {
+    img {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  #navbarScroll {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primaryColor;
+          font-weight: 700;
+          margin-left: 1em;
+          border-radius: 0.5em;
+          border: 1px solid transparent;
+          transition: 0.5s color ease;
+
+          &:hover {
+            color: rgb(179, 255, 0);
+            border-radius: 0.5em;
+            border: 1px solid $primaryColor;
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Paralax
+.paralax {
+  height: 800px;
+  background-image: url("../../img/paralax/01.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+
+  h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Sriracha", cursive;
+    font-size: 3rem;
+  }
+
+  h4 {
+    color: rgb(255, 255, 255);
+    font-family: "Sriracha", cursive;
+    font-size: 2rem;
+  }
+}
+
+// Header
+.header {
+  a {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: $tertiaryColor;
+    }
+  }
+}
+
+// Katalog
+.katalog {
+  display: grid;
+  grid-template-areas:
+    "produk-edukasi produk-edukasi alat-ibadah"
+    "pakaian pakaian alat-dapur"
+    "herbal kecantikan kecantikan";
+
+  gap: 10px;
+
+  // Produk Edukasi
+  .produk-edukasi {
+    grid-area: produk-edukasi;
+    min-height: 30%;
+    background-color: aqua;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    background-image: url(../../img/katalog/01.jpg);
+    background-size: cover;
+    margin-top: 5rem;
+  }
+
+  // Alat Ibadah
+  .alat-ibadah {
+    grid-area: alat-ibadah;
+    min-height: 150px;
+    background-color: salmon;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    background-image: url(../../img/katalog/02.jpg);
+    background-size: cover;
+    margin-top: 5rem;
+  }
+
+  // Pakaian
+  .pakaian {
+    grid-area: pakaian;
+    min-height: 200px;
+    background-color: aquamarine;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    background-image: url(../../img/katalog/03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // Alat Dapur
+  .alat-dapur {
+    grid-area: alat-dapur;
+    min-height: 200px;
+    background-color: bisque;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    background-image: url(../../img/katalog/04.jpg);
+    background-size: cover;
+  }
+
+  // Kecantikan
+  .kecantikan {
+    grid-area: kecantikan;
+    min-height: 100px;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    background-image: url(../../img/katalog/06.jpg);
+    background-size: cover;
+    margin-bottom: 3rem;
+  }
+
+  // Herbal
+  .herbal {
+    grid-area: herbal;
+    min-height: 100px;
+    background-color: brown;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    background-image: url(../../img/katalog/05.jpg);
+    background-size: cover;
+    margin-bottom: 3rem;
+  }
+}
+
+// Produk Terbaik
+.custom-produk {
+  h2 {
+    color: $primaryColor;
+    font-family: "Sriracha", cursive;
+    margin-top: 3rem;
+  }
+
+  a {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: $tertiaryColor;
+    }
+  }
+
+  .btn {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: $tertiaryColor;
+    }
+  }
+
+  margin-bottom: 2rem;
+}
+
+// Kontak
+.kontak {
+  height: 250px;
+  background-image: url(../../img/kontak/01.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  margin-top: 5rem;
+  padding: 3rem;
+
+  h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  a {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+
+    h6 {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  ul {
+    li,
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+      list-style: none;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+// RESPONSIBILITY UKURAN EXTRA SMALL (SMARTPHONE)
+@media (max-width: 480px) {
+  // Paralax
+  .paralax {
+    height: 700px;
+    background-image: url("../../img/paralax/01.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family: "Sriracha", cursive;
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      color: rgb(255, 255, 255);
+      font-family: "Sriracha", cursive;
+      font-size: 1rem;
+    }
+
+    img {
+      width: 30%;
+    }
+  }
+
+  // Produk Terbaik {
+  .custom-produk {
+    h2 {
+      font-size: 130%;
+      margin-top: 1rem;
+    }
+
+    a {
+      @include tombol-1;
+      border: 1px solid transparent;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        background-color: $tertiaryColor;
+      }
+    }
+
+    .modal {
+      img {
+        width: 50%;
+      }
+
+      td,
+      th {
+        font-size: 80%;
+      }
+    }
+  }
+
+  // Kontak
+  .kontak {
+    height: 110px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    h6 {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+      font-size: 30%;
+    }
+
+    ul {
+      li {
+        font-family: "Ubuntu", sans-serif;
+        color: yellow;
+        list-style: none;
+        font-size: 30%;
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+// RESPONSIBILITY UKURAN SMALL (LANDSCAPE SAMARTPHONE)
+
+// RESPONSIBILITY UKURAN MEDIUM (TABLET)
+
+// RESPONSIBILITY UKURAN LARGE (DEKSTOP)

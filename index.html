@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo/01.png" width="500" />
+    <title>Diary2R</title>
+  </head>
+  <body>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+      <!-- Bootstrap Icon -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+      <!-- My CSS -->
+      <link rel="stylesheet" href="code/scss/main.css" />
+
+      <!-- Library AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      <!-- Navbar -->
+      <div class="container my-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav fixed-top shadow">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo/02.png" alt="02"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+              <ul class="navbar-nav ms-auto my-2 my-lg-0  navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                <li class="nav-item">
+                  <a class="nav-link" href="code/html/produk-edukasi/produk-edukasi-paketbundle.html"><i class="bi bi-shop"></i> Produk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="code/html/tentang/tentang.html"><i class="bi bi-gear"></i> Tentang</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Akhir Navbar -->
+
+      <!-- Paralax -->
+      <div class="paralax">
+        <div class="container">
+          <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="img/logo/01.png" class="rounded mx-auto d-block" alt="01" width="10%">
+            <h2 class="text-center">Toko Diary 2R</h2>
+            <h4 class="text-center">Selalu Mengedukasi, Selalu Menginspirasi dan Selalu di Hati</h4>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+      </div>
+      <!-- Akhir Paralax -->
+
+      <!-- Katalog -->
+      <div class="section">
+        <div class="container">
+          <div class="katalog">
+            <div class="produk-edukasi" data-aos="fade-down" data-aos-duration="1000" >
+              <a href="code/html/produk-edukasi/produk-edukasi-paketbundle.html">
+              </a>
+            </div>
+            <div class="alat-ibadah"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+            </div>
+            <div class="pakaian" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+            </div>
+            <div class="alat-dapur"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+            </div>
+            <div class="kecantikan" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            </div>
+            <div class="herbal"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            </div>
+           </div>
+           <hr>
+        </div>
+      </div>
+      <!-- Akhir Katalog -->
+      
+      <!-- Produk Terbaik -->
+      <section id="produk-terbaik">
+        <div class="container">
+          <div class="row text-center mb-3 custom-produk">
+            <div class="col mb-3" data-aos="fade-down" data-aos-duration="1000">
+              <h2>Produk Terbaik</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center custom-produk">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000">
+                <img src="img/best/01.jpg" class="card-img-top" alt="products 01">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#" data-bs-target="#best01" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="best01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="img/modal/best/01.jpg" alt="01">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>Smart Hafiz Versi 5 Single</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>D-AQL10</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Produk Edukasi</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 2.499.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
+                <img src="img/best/02.jpg" class="card-img-top" alt="products 02">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#best02" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="best02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="img/modal/best/02.jpg" alt="02">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>MM Kids Single</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>P-AGMKID</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Produk Edukasi</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 1.874.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+                <img src="img/best/03.jpg" class="card-img-top" alt="products 03">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#best03" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="best03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="img/modal/best/03.jpg" alt="03">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>Double Pan Single</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>OK-DP</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Alat Dapur</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 893.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
+                <img src="img/best/04.jpg" class="card-img-top" alt="products 04">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#best04" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="best04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="img/modal/best/04.jpg" alt="04">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>Now Smart Cooker Low Carb</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>OK-NSCLC</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Alat Dapur</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 2.050.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+                <img src="img/best/05.jpg" class="card-img-top" alt="products 05">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#best05" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="best05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="img/modal/best/05.jpg" alt="05">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>Litle Abid Seri 1</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>JN-CDB27</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Produk Edukasi</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 650.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500">
+                <img src="img/best/06.jpg" class="card-img-top" alt="products 06">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#best06" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="best06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="img/modal/best/06.jpg" alt="06">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>Yellow Pumkin Casserole</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>DES21S018</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Alat Dapur</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 790.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="600">
+                <img src="img/best/07.jpg" class="card-img-top" alt="products 06">
+                <div class="card-body">
+                  <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                  <a href="#"  data-bs-target="#best07" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                </div>
+              </div>
+            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="best07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="img/modal/best/07.jpg" alt="07">
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table table-borderless">
+                            <tr>
+                              <th>Nama Produk</th>
+                              <td>Jam Adzan Ka'bah</td>
+                            </tr>
+                            <tr>
+                              <th>Rating</th>
+                              <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                            </tr>
+                            <tr>
+                              <th>Kode Produk</th>
+                              <td>Q-ST</td>
+                            </tr>
+                            <tr>
+                              <th>Kategori</th>
+                              <td>Alat Ibadah</td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>Selalu Tersedia</td>
+                            </tr>
+                            <tr>
+                              <th>Harga Produk</th>
+                              <td>Rp. 1.650.000,-</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                      <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir Modal -->
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="700">
+                  <img src="img/best/08.jpg" class="card-img-top" alt="products 06">
+                  <div class="card-body">
+                    <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                    <a href="#"  data-bs-target="#best08" data-bs-toggle="modal"><i class="bi bi-justify-left"></i> Detail</a>
+                  </div>
+                </div>
+              </div>
+                <!-- Modal -->
+                <div class="modal fade" id="best08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="img/modal/best/08.jpg" alt="08">
+                          </div>
+                          <div class="col-md-6">
+                            <table class="table table-borderless">
+                              <tr>
+                                <th>Nama Produk</th>
+                                <td>Codless Iron Single</td>
+                              </tr>
+                              <tr>
+                                <th>Rating</th>
+                                <td><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"><i class="bi bi-star-fill"></i></td>
+                              </tr>
+                              <tr>
+                                <th>Kode Produk</th>
+                                <td>JNPB3</td>
+                              </tr>
+                              <tr>
+                                <th>Kategori</th>
+                                <td>Alat Rumah Tangga</td>
+                              </tr>
+                              <tr>
+                                <th>Stok Produk</th>
+                                <td>Selalu Tersedia</td>
+                              </tr>
+                              <tr>
+                                <th>Harga Produk</th>
+                                <td>Rp. 1.665.000,-</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="https://bit.ly/3IaXdNu"><i class="bi bi-chat-dots"></i> Chat</a>
+                        <a href="https://bit.ly/3IaXdNu"><i class="bi bi-cart3"></i> Beli</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Akhir Modal -->
+            </div>
+            <hr>
+          </div>
+      </section>
+      <!-- Akhir Produk Terbaik-->
+
+      <!-- Kata Mereka -->
+      <div class="section">
+        <div class="container">
+          <div class="row text-center mb-3 custom-produk">
+            <div class="col mb-3" data-aos="fade-down" data-aos-duration="1000">
+              <h2>Testimoni</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center custom-produk">
+            <div class="col-lg-4 col-6 mb-3">
+              <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="img/testimoni/01.jpg" class="card-img-top" alt="products 01">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-3">
+              <div class="card" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="img/testimoni/02.jpg" class="card-img-top" alt="products 02">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mb-3">
+              <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="img/testimoni/03.jpg" class="card-img-top" alt="products 03">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row custom-produk">
+            <div class="col text-center" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
+              <a href="#"><i class="bi bi-file-earmark-text"></i> Lihat Lebih Banyak</a>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <!-- Akhir Kata Mereka -->
+
+      <!-- Banner -->
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col" data-aos="fade-up"
+            data-aos-duration="3000">
+              <img src="img/baner/01.jpg" class="img-fluid" alt="01">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Banner -->
+
+      <!-- Kontak -->
+      <div class="kontak">
+        <div class="row">
+          <div class="col-lg-3 col-3">
+            <h6 class="text-center">Produk Lainnya</h6>
+              <h6><a href="code/html/herbal/produk-herbal-essential-oil.html">Purifyng Set NE</a></h6>
+              <h6><a href="code/html/prabot-rumah-tangga/produk-prabot-blender-mixer.html">Mixer Single</a></h6>
+              <h6><a href="code/html/prabot-rumah-tangga/produk-prabot-pan.html">Red Square Grill</a></h6>
+              <h6><a href="code/html/produk-edukasi/produk-edukasi-pen.html">Pen Abid</a></h6>
+              <h6><a href="code/html/prabot-rumah-tangga/produk-prabot-blender-mixer.html">NPC Single</a></h6>
+          </div>
+          <div class="col-lg-3 col-3">
+            <h6 class="text-center">Logistik Pengiriman</h6>
+              <h6>JNE</h6>
+              <h6>Sicepat</h6>
+              <h6>J&T</h6>
+              <h6>Antar Aja</h6>
+              <h6>Pos Indonesia</h6>
+          </div>
+          <div class="col-lg-3 col-3">
+            <h6 class="text-center">Sosial Media</h6>
+              <h6><a href="https://bit.ly/3IaXdNu">
+                <i class="bi bi-whatsapp"></i> 0812 6794 6739
+              </a></h6>
+              <h6><a href="https://web.facebook.com/Monica.Poetri.N">
+                <i class="bi bi-facebook"></i> Monica Putri N.
+              </a></h6>
+              <h6><a href="https://www.instagram.com/monicapoetri_710/">
+                <i class="bi bi-instagram"></i> monicapoetri_710
+              </a></h6>
+              <h6><a href="https://www.tiktok.com/@monicagen_q710">
+                <i class="bi bi-tiktok"></i> monicageni_q710
+              </a></h6>
+              <h6><i class="bi bi-telegram"></i> 0897 9176 971</h6>
+          </div>
+          <div class="col-lg-3 col-3">  
+            <h6 class="text-center">Lokasi</h6>
+            <a href="https://www.google.co.id/maps/place/Toko+Diary2R+G08/@-6.36178,108.1139191,17z/data=!4m5!3m4!1s0x2e6eb57e1492f85d:0xb501d9af198feced!8m2!3d-6.3617853!4d108.1161131">
+              <h6>
+              Perumahan Surya Residence
+              <br>
+              Ds. Karanganyar Kec. Kandanghaur
+              <br>
+              Kab. Indramayu
+            </h6>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Kontak -->
+
+      <!-- Footer -->
+      <div class="container">
+        <div class="footer">
+          <div class="row">
+            <div class="col text-center">
+              <h6>Copyright 2022 | Diary 2R</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Footer -->
+
+
+      <!-- Bottom Customer Sevice -->
+      <section>
+        <div class="container">
+          <nav class="navbar navbar-light bg-transparant fixed-bottom ">
+            <div class="container">
+              <a class="navbar-brand ms-auto" href="https://bit.ly/3IaXdNu">
+                <img src="img/cs/01.png" alt="" width="70" height="70">
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- Akhir Bottom Customer Service -->
+
+     
+
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+       <!-- Library AOS -->
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
+
+       <!-- Platfrom GSap-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
+       <!-- GSap-->
+       <script>
+         gsap.registerPlugin(TextPlugin);
+         gsap.to(".display-4", { duration: 5, delay: 1.5, text: "SELAMAT DATANG DI" });
+         gsap.to(".lead", { duration: 5, delay: 1.5, text: "Toko Mamia" });
+         gsap.from(".navbar", { duration: 1.5, y: "-100", opacity: 0, ease: "bounce" });
+         gsap.from(".logo", { duration: 1.5, y: "-100", opacity: 0, ease: "bounce" });
+       </script>
+    </head>
+  </body>
+</html>

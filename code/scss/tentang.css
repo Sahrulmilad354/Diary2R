@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&family=Ubuntu:wght@400;700&display=swap");
+body {
+  padding-top: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-nav {
+  font-family: "Sriracha", cursive;
+}
+
+.custom-nav .navbar-brand img {
+  width: 150px;
+  height: 40px;
+}
+
+.custom-nav #navbarScroll .navbar-nav .nav-item .nav-tentang {
+  color: #b3ff00;
+  background-color: #018347;
+  font-weight: 700;
+  margin-left: 1em;
+  border-radius: 0.5em;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s color ease;
+  transition: 0.5s color ease;
+}
+
+.custom-nav #navbarScroll .navbar-nav .nav-item .nav-produk {
+  color: #018347;
+  font-weight: 700;
+  margin-left: 1em;
+  border-radius: 0.5em;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s color ease;
+  transition: 0.5s color ease;
+}
+
+.custom-nav #navbarScroll .navbar-nav .nav-item .nav-produk:hover {
+  color: #b3ff00;
+  border-radius: 0.5em;
+  border: 1px solid #018347;
+  background-color: #018347;
+}
+
+.header .tabloid {
+  color: #018347;
+  font-family: "Sriracha", cursive;
+  margin-top: 6rem;
+}
+
+.header .accordion-button {
+  color: #b3ff00;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header .accordion-body {
+  text-align: justify;
+}
+
+.header .btn {
+  margin-top: 2rem;
+}
+
+.header a,
+.header .btn {
+  display: inline-block;
+  color: #b3ff00;
+  background-color: #018347;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header a:hover,
+.header .btn:hover {
+  color: #018347;
+  border: 1px solid #018347;
+  background-color: #b3ff00;
+}
+
+.tentang h2 {
+  color: #018347;
+  font-family: "Sriracha", cursive;
+  margin-top: 2rem;
+}
+
+.tentang a {
+  display: inline-block;
+  color: #b3ff00;
+  background-color: #018347;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.tentang a:hover {
+  color: #018347;
+  border: 1px solid #018347;
+  background-color: #b3ff00;
+}
+
+.tentang .btn {
+  display: inline-block;
+  color: #b3ff00;
+  background-color: #018347;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.tentang .btn:hover {
+  color: #018347;
+  border: 1px solid #018347;
+  background-color: #b3ff00;
+}
+
+.lokasi .judul-lokasi {
+  color: #018347;
+  font-family: "Sriracha", cursive;
+  margin-top: 3rem;
+}
+
+.kontak {
+  height: 250px;
+  background-image: url(../../img/kontak/01.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.kontak h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+}
+
+.kontak h6:hover {
+  color: #00d9ff;
+}
+
+.kontak h6 a {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+}
+
+.kontak h6 a:hover {
+  color: #00d9ff;
+}
+
+.kontak a {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+  text-decoration: none;
+}
+
+.kontak a:hover {
+  color: #00d9ff;
+}
+
+.kontak a h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+}
+
+.kontak a h6:hover {
+  color: #00d9ff;
+}
+
+.kontak ul li,
+.kontak ul a {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+  list-style: none;
+  text-decoration: none;
+}
+
+.kontak ul li:hover,
+.kontak ul a:hover {
+  color: #00d9ff;
+}
+
+.footer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .header .custom-carousel {
+    margin-top: 3rem;
+  }
+  .header .btn {
+    margin-top: 1rem;
+  }
+  .custom-produk h2 {
+    font-size: 130%;
+    margin-top: 3rem;
+  }
+  .custom-produk h3 {
+    font-size: 130%;
+    margin-top: 1rem;
+  }
+  .custom-produk a {
+    display: inline-block;
+    color: #b3ff00;
+    background-color: #018347;
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    font-size: 70%;
+    font-family: "Sriracha", cursive;
+    border: 1px solid transparent;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .custom-produk a:hover {
+    color: #018347;
+    border: 1px solid #018347;
+    background-color: #b3ff00;
+  }
+  .custom-produk .modal img {
+    width: 50%;
+  }
+  .custom-produk .modal td,
+  .custom-produk .modal th {
+    font-size: 80%;
+  }
+  .kontak {
+    height: 110px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .kontak h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+    font-size: 30%;
+  }
+  .kontak ul li {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+    list-style: none;
+    font-size: 30%;
+  }
+  .footer {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=tentang.css.map */

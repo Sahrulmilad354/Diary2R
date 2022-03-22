@@ -1,0 +1,295 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&family=Ubuntu:wght@400;700&display=swap");
+
+// Variabel
+$primaryColor: rgb(1, 131, 71);
+$secondaryColor: rgb(0, 217, 255);
+$tertiaryColor: rgb(179, 255, 0);
+$textColor: rgb(29, 29, 29);
+
+// Body
+body {
+  padding-top: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+// Mixin 1
+@mixin tombol {
+  display: inline-block;
+  color: $tertiaryColor;
+  background-color: $primaryColor;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+}
+
+// Mixin 2
+@mixin tombol-1 {
+  display: inline-block;
+  color: $tertiaryColor;
+  background-color: $primaryColor;
+  border-radius: 0.5em;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  font-size: 70%;
+  font-family: "Sriracha", cursive;
+}
+
+// Navbar
+.custom-nav {
+  font-family: "Sriracha", cursive;
+  .navbar-brand {
+    img {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  #navbarScroll {
+    .navbar-nav {
+      .nav-item {
+        .nav-produk {
+          color: rgb(179, 255, 0);
+          background-color: $primaryColor;
+          font-weight: 700;
+          margin-left: 1em;
+          border-radius: 0.5em;
+          border: 1px solid transparent;
+          transition: 0.5s color ease;
+        }
+
+        .nav-tentang {
+          color: $primaryColor;
+          font-weight: 700;
+          margin-left: 1em;
+          border-radius: 0.5em;
+          border: 1px solid transparent;
+          transition: 0.5s color ease;
+
+          &:hover {
+            color: rgb(179, 255, 0);
+            border-radius: 0.5em;
+            border: 1px solid $primaryColor;
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Header
+.header {
+  .custom-carousel {
+    margin-top: 5rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+
+  a,
+  .btn {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: $tertiaryColor;
+    }
+  }
+}
+
+// Produk
+.produk {
+  h2,
+  h3 {
+    color: $primaryColor;
+    font-family: "Sriracha", cursive;
+    margin-top: 3rem;
+  }
+
+  a {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: $tertiaryColor;
+    }
+  }
+
+  .btn {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: $tertiaryColor;
+    }
+  }
+}
+
+// Kontak
+.kontak {
+  height: 250px;
+  background-image: url(../../img/kontak/01.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  margin-top: 5rem;
+  padding: 3rem;
+
+  h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  a {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+
+    h6 {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  ul {
+    li,
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+      list-style: none;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+// RESPONSIBILITY UKURAN EXTRA SMALL (SMARTPHONE)
+@media (max-width: 480px) {
+  // Header
+  .header {
+    .custom-carousel {
+      margin-top: 3rem;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+  }
+
+  // Produk Terbaik {
+  .custom-produk {
+    h2 {
+      font-size: 130%;
+      margin-top: 3rem;
+    }
+
+    h3 {
+      font-size: 130%;
+      margin-top: 1rem;
+    }
+
+    a {
+      @include tombol-1;
+      border: 1px solid transparent;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        background-color: $tertiaryColor;
+      }
+    }
+
+    .modal {
+      img {
+        width: 50%;
+      }
+
+      td,
+      th {
+        font-size: 80%;
+      }
+    }
+  }
+
+  // Kontak
+  .kontak {
+    height: 110px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    h6 {
+      font-family: "Ubuntu", sans-serif;
+      color: yellow;
+      font-size: 30%;
+    }
+
+    ul {
+      li {
+        font-family: "Ubuntu", sans-serif;
+        color: yellow;
+        list-style: none;
+        font-size: 30%;
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+// RESPONSIBILITY UKURAN SMALL (LANDSCAPE SAMARTPHONE)
+
+// RESPONSIBILITY UKURAN MEDIUM (TABLET)
+
+// RESPONSIBILITY UKURAN LARGE (DEKSTOP)
