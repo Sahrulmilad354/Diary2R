@@ -79,6 +79,40 @@ body {
   }
 }
 
+// Sekilas
+.sekilas {
+  margin-top: 7rem;
+
+  h3 {
+    color: $primaryColor;
+    font-family: "Sriracha", cursive;
+  }
+
+  h4 {
+    color: $primaryColor;
+    font-family: "Sriracha", cursive;
+  }
+
+  p {
+    text-align: justify;
+    color: $textColor;
+    font-family: "Ubuntu", sans-serif;
+
+    b {
+      color: $primaryColor;
+    }
+  }
+
+  a {
+    margin-left: 5px;
+    color: $secondaryColor;
+
+    &:hover {
+      color: $tertiaryColor;
+    }
+  }
+}
+
 // Header
 .header {
   .tabloid {
@@ -230,11 +264,24 @@ body {
   // Header
   .header {
     .custom-carousel {
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
 
     .btn {
       margin-top: 1rem;
+    }
+  }
+
+  // Sekilas
+  .sekilas {
+    margin-top: 6rem;
+
+    img {
+      margin-bottom: 2rem;
+    }
+
+    h4 {
+      margin-top: 2rem;
     }
   }
 

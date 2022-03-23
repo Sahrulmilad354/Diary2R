@@ -42,6 +42,39 @@ body {
   background-color: #018347;
 }
 
+.sekilas {
+  margin-top: 7rem;
+}
+
+.sekilas h3 {
+  color: #018347;
+  font-family: "Sriracha", cursive;
+}
+
+.sekilas h4 {
+  color: #018347;
+  font-family: "Sriracha", cursive;
+}
+
+.sekilas p {
+  text-align: justify;
+  color: #1d1d1d;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sekilas p b {
+  color: #018347;
+}
+
+.sekilas a {
+  margin-left: 5px;
+  color: #00d9ff;
+}
+
+.sekilas a:hover {
+  color: #b3ff00;
+}
+
 .header .tabloid {
   color: #018347;
   font-family: "Sriracha", cursive;
@@ -200,10 +233,19 @@ body {
 
 @media (max-width: 480px) {
   .header .custom-carousel {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .header .btn {
     margin-top: 1rem;
+  }
+  .sekilas {
+    margin-top: 6rem;
+  }
+  .sekilas img {
+    margin-bottom: 2rem;
+  }
+  .sekilas h4 {
+    margin-top: 2rem;
   }
   .custom-produk h2 {
     font-size: 130%;
