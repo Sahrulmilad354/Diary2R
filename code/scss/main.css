@@ -200,6 +200,12 @@ body {
   margin-bottom: 3rem;
 }
 
+.mengapa-kami h2 {
+  color: #018347;
+  font-family: "Sriracha", cursive;
+  margin-top: 3rem;
+}
+
 .custom-produk {
   margin-bottom: 2rem;
 }
@@ -386,9 +392,21 @@ body {
     font-size: 30%;
   }
   .footer {
-    font-size: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .footer h6 {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-produk .modal img {
+    width: 100%;
+  }
+  .custom-produk .modal td,
+  .custom-produk .modal th {
+    font-size: 80%;
   }
 }
 /*# sourceMappingURL=main.css.map */

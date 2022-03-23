@@ -206,6 +206,15 @@ body {
   }
 }
 
+// Mengapa Kami
+.mengapa-kami {
+  h2 {
+    color: $primaryColor;
+    font-family: "Sriracha", cursive;
+    margin-top: 3rem;
+  }
+}
+
 // Produk Terbaik
 .custom-produk {
   h2 {
@@ -397,13 +406,29 @@ body {
 
   // Footer
   .footer {
-    font-size: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    h6 {
+      font-size: 0.5rem;
+    }
   }
 }
 // RESPONSIBILITY UKURAN SMALL (LANDSCAPE SAMARTPHONE)
 
 // RESPONSIBILITY UKURAN MEDIUM (TABLET)
+@media (max-width: 991px) {
+  // Produk Terbaik
+  .custom-produk {
+    .modal {
+      img {
+        width: 100%;
+      }
 
+      td,
+      th {
+        font-size: 80%;
+      }
+    }
+  }
+}
 // RESPONSIBILITY UKURAN LARGE (DEKSTOP)

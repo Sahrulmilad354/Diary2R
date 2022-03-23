@@ -302,9 +302,11 @@ body {
 
   // Footer
   .footer {
-    font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    h6 {
+      font-size: 0.5rem;
+    }
   }
 }
 // RESPONSIBILITY UKURAN SMALL (LANDSCAPE SAMARTPHONE)

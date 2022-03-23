@@ -259,9 +259,11 @@ body {
     font-size: 30%;
   }
   .footer {
-    font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .footer h6 {
+    font-size: 0.5rem;
   }
 }
 /*# sourceMappingURL=tentang.css.map */
